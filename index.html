@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+    
+  <head>
+    <title>Thomas Hanna | Software Developer</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="styles/carousel.scss" rel="stylesheet">
+  </head>
+  
+  <body >
+
+    <!---NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Thomas Hanna</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <a class="nav-item nav-link" href="images/resume.pdf" download="ThomasHannaResume" target="_blank">Resume PDF</a>
+          </div>
+        </div>
+    </nav>
+    <!---END NAVBAR-->
+
+    <!---CAROUSEL-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/yoda.jpeg" class="card-img" width="100%" height="400px" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>First slide label</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="400px" xmlns="http://www.w3.org/2000/svg" 
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Second slide label</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="400px" xmlns="http://www.w3.org/2000/svg" 
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Third slide label</h4>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!---END CAROUSEL-->
+
+    <!---FEATURETTE-->
+    <hr class="featurette-divider">
+
+    <div class="container"> 
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">About Me. <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">
+                    Donec ullamcorper nulla non metus auctor fringilla. 
+                    Vestibulum id ligula porta felis euismod semper. 
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
+                    Fusce dapibus, tellus ac cursus commodo.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="media">
+                    <img src="images/yoda.jpeg" class=" mr-3" alt="..." width="100%" height="100%">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container"> 
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h2 class="featurette-heading">Projects <span class="text-muted">Checkmate.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+        <div class="row featurette">
+            <div class="col-md-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/yoda.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/yoda.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/yoda.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                            <img src="images/yoda.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <hr class="featurette-divider">
+
+    <div class="container"> 
+        <div class="row featurette">
+            <div class="col-md-7 order-md-1">
+            <h2 class="featurette-heading">Skills <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" 
+                    role="progressbar" 
+                    style="width: 10%" 
+                    aria-valuenow="10" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100">
+                    </div>
+                </div>
+                <p>java</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" 
+                    role="progressbar" 
+                    style="width: 25%" 
+                    aria-valuenow="25" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100">
+                    </div>
+                </div>
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" 
+                    role="progressbar" 
+                    style="width: 50%" 
+                    aria-valuenow="50" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100">
+                    </div>
+                </div>
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" 
+                    role="progressbar" 
+                    style="width: 75%" 
+                    aria-valuenow="75" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100">
+                    </div>
+                </div>
+                <p>Python</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" 
+                    role="progressbar" 
+                    style="width: 100%" 
+                    aria-valuenow="100" 
+                    aria-valuemin="0" 
+                    aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    <div class="container"> 
+        <div class="row featurette">
+          <div class="col-md-10">
+            <h2 class="featurette-heading">Experience <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+        </div>
+        <div class="row featurette">
+            <div class="col-md-3 order-md-1">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list1" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list1" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list1" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list1" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                </div>
+            </div>
+            <div class="col-md-7 order-md-2">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list1">...</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list1">...</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list1">...</div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list1">...</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!---END FEATURETTE-->
+
+    <!---FOOTER--->
+    <footer class="container ">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    <!---END FOOTER--->
+  
+    <!---BOOTSTRAP REQ-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+    <!---END BOOTSTRAP REQ-->
+  </body>
+
+</html>
