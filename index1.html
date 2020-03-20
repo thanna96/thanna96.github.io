@@ -16,8 +16,10 @@ body {font-size:16px;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Thomas<br>Hanna</b></h3>
+    <p class="w3-center"><img src="images\me.jpg"  style="height:290px;width:187px"></p>
+    <h3 class="w3-padding-10"><b>Thomas<br>Hanna</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="images/resume.pdf" class="w3-bar-item w3-button w3-hover-white" download="ThomasHannaResume" target="_blank">Resume PDF</a>
@@ -42,7 +44,7 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- About Me -->
-  <div class="w3-container" style="margin-top:30px" id="about">
+  <div class="w3-container" style="margin-top:43px" id="about">
     <h1 class="w3-xxxlarge w3-text-black"><b>About Me.</b></h1>
     <hr style="width:50px;border:5px solid darkgray" class="w3-round">
   </div>
@@ -51,7 +53,7 @@ body {font-size:16px;}
   <div class="w3-row-padding">
     <div class="w3-card w3-round">
       <div class="w3-dark-grey">
-        <button onclick="acccordianFunc('aboutMe')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i>Summary</button>
+        <button onclick="acccordianFunc('aboutMe')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right" id ="defaultOpen3"></i>Summary</button>
         <div id="aboutMe" class="w3-white w3-hide w3-container">
           <p>
             Growing up in a small rural town in New Jersey, I learned a lot about farming and taking care of animals. 
@@ -101,7 +103,7 @@ body {font-size:16px;}
 
         </div>
 
-        <button onclick="acccordianFunc('likes')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Things I Like</button>
+        <button onclick="acccordianFunc('likes')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Interests</button>
         <div id="likes" class="w3-white w3-hide w3-container">
           <div class="w3-third">
             <table class="w3-table">
@@ -123,7 +125,7 @@ body {font-size:16px;}
             </tbody></table>
           </div>
 
-          <div id="music" class="w3-twothird">
+          <div id="music" class="w3-twothird q">
             <div class="w3-col m4 w3-margin-bottom">
               <div>
                 <img src="images\pinkfloyd.jpg" alt="proj1" style="width:100%">
@@ -150,7 +152,7 @@ body {font-size:16px;}
             </div>
           </div>
 
-          <div id="shows" class="w3-twothird">
+          <div id="shows" class="w3-twothird q">
             <div class="w3-col m4 w3-margin-bottom">
               <div>
                 <img src="images\community.jpg" alt="proj1" style="width:100%">
@@ -177,7 +179,7 @@ body {font-size:16px;}
             </div>
           </div>
 
-          <div id="books" class="w3-twothird">
+          <div id="books" class="w3-twothird q">
             <div class="w3-col m4 w3-margin-bottom">
               <div>
                 <img src="images\fish.jpg" alt="proj1" style="width:100%">
@@ -205,7 +207,7 @@ body {font-size:16px;}
 
           </div>
 
-          <div id="movies" class="w3-twothird">
+          <div id="movies" class="w3-twothird q">
             <div class="w3-col m4 w3-margin-bottom">
               <div>
                 <img src="images\basterds.jpg" alt="proj1" style="width:100%">
@@ -233,7 +235,7 @@ body {font-size:16px;}
 
           </div>
 
-          <div id="hobbies" class="w3-twothird">
+          <div id="hobbies" class="w3-twothird q">
             <div class="w3-col m4 w3-margin-bottom">
               <div>
                 <img src="images\python.png" alt="proj1" style="width:100%">
@@ -263,31 +265,6 @@ body {font-size:16px;}
 
         </div>
 
-        <button onclick="acccordianFunc('adven')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Adventures</button>
-        <div id="adven" class="w3-white w3-hide w3-container">
-       <div class="w3-row-padding">
-       <br>
-         <div class="w3-third">
-           <img src="images\art1.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-         <div class="w3-third">
-           <img src="images\art2.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-         <div class="w3-third">
-           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-         <div class="w3-third">
-           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-         <div class="w3-third">
-           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-         <div class="w3-third">
-           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
-         </div>
-       </div>
-        </div>
-
       </div>      
     </div>
     
@@ -298,7 +275,7 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-black"><b>Projects.</b></h1>
     <hr style="width:50px;border:5px solid darkgray" class="w3-round">
     <p><b>These are some of the projects I have worked on since 2017, some are school projects some are projects done in my free time.
-         Feel free to contact me if you have any question about my work.</b>
+         Feel free to contact me if you have any question about my work. (3/20 - Links to all my projects are coming soon!)</b>
     </p>
 
     
@@ -320,98 +297,101 @@ body {font-size:16px;}
       </div>
       <br>
     </div>
+
     <div><br></div>
+
   <div id="python" class="proj">
     <div><br></div>
       <div>
         <div><br></div>
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-padding-16 w3-dark-grey">Proj1</li>
-          <li class="w3-padding-16">Jsssava</li>
-          <li class="w3-padding-16">Pytsshon</li>
-          <li class="w3-padding-16">Css</li>
-          <li class="w3-padding-16">SssQL</li>
-          <li class="w3-padding-16">Jssavascript</li>
-          <li class="w3-padding-16">HssTML</li>
+          <li class="w3-padding-16 w3-dark-grey">Python Projects</li>
+          <div class="w3-third w3-margin-bottom ">
+            <li class="w3-padding-16"><b>Data-Structure Problems</b><br><br><br></li>
+            <li class="w3-padding-16"><b>Cryptography Algorithms</b><br><br><br></li>
+            <li class="w3-padding-16"><b>Psuedo-DNS</b></li>          
+          </div>
+          <div class="w3-twothird w3-margin-bottom ">
+            <li class="w3-padding-16">This is a collection of LeetCode-esque problems with solutions written in 
+              Python using different data structures including: Arrays, Trees, Dictionaries, Graphs, Hash tables, Heaps, Linked lists,
+              Queues, Stacks, and some other data structures I found useful.</li>
+            <li class="w3-padding-16">This project includes various small programs. These programs are designed to help decrypt or 
+              encrypt plaintext. Each program has its own specific use from encrypting/decrypting to finding primes or factoring integers.</li>
+            <li class="w3-padding-16">Mimicking DNS this application finds the domain name of every IP address given in a text file. There are mulitple servers
+              for specific domains (i.e. .edu .com .gov etc.), the program correctly finds the domain names and writes them to a file.
+            </li>
+          </div>
         </ul>
       </div>
   </div>
 
   <!-- Project Descriptions -->
   <div id="java" class="proj">
-    <div  class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock.png" alt="proj1" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypto-Chat</h3>
-          <p class="w3-opacity">Android App Written in Java using Android Studio</p>
-          <p class="w3-opacity">https://github.com/thanna96/Crypto-Chat</p>
-          <p>CryptoChat is designed to be a discrete messaging service that uses asymmetric cryptography to securely 
-              send messages to your friends or business partners. Privacy on the internet is very important 
-              and CryptoChat is a great way to make sure your messages aren’t read by third parties.</p>
+
+    <div><br></div>
+        <div>
+          <div><br></div>
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-padding-16 w3-dark-grey">Java Projects</li>
+            <div class="w3-third w3-margin-bottom ">
+              <li class="w3-padding-16"><b>Crypto-Chat</b><br><br><br><br></li>
+              <li class="w3-padding-16"><b>Chess</b><br><br><br></li>
+              <li class="w3-padding-16"><b>Photo Library</b>(in progress)</li>          
+            </div>
+            <div class="w3-twothird w3-margin-bottom ">
+              <li class="w3-padding-16">CryptoChat is designed to be a discrete messaging Android App that uses asymmetric cryptography to securely send messages to your friends or 
+                business partners. Privacy on the internet is very important and CryptoChat is a great way to make sure your messages aren’t read by third parties.</li>
+              <li class="w3-padding-16">This game is a standard rules chess application, written in Java using many object oriented techniques. The game is outputted on the 
+                terminal and controlled by inputs from a user. (GUI version coming soon)
+              </li>
+              <li class="w3-padding-16">An application to view, rename, delete, and add photos on your local drive. Mimics a standard photo viewer app.</li>
+            </div>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock1.png" alt="proj2" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypotography Algorithms</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Cryptography-Algorithms</p>
-          <p>This project includes various small programs written in Python. These programs are designed 
-              to help decrypt or encrypt plaintext. Each program has its own specific use from encrypting/decrypting 
-              to finding primes or factoring integers.
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\graph.png" alt="proj3" style="width:100%">
-        <div class="w3-container">
-          <h3>Python Data Structures</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Python-Algorithm-Practice</p>
-          <p>This is a collection of LeetCode-esque problems with solutions written in Python using different data structures 
-              including: Arrays, Trees, Dictionaries, Graphs, Hash tables, Heaps, Linked lists, Queues, Stacks, and some other 
-              data structures I found useful.</p>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div id="c" class="proj">
     <div><br></div>
-    <div>
-      <div><br></div>
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Largdgnguage</li>
-        <li class="w3-padding-16">Javfgdfa</li>
-        <li class="w3-padding-16">Pytgfgdhon</li>
-        <li class="w3-padding-16">fgC</li>
-        <li class="w3-padding-16">SgdfgQL</li>
-        <li class="w3-padding-16">Jafgdfvascript</li>
-        <li class="w3-padding-16">HTggdML</li>
-      </ul>
-    </div>
+      <div>
+        <div><br></div>
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-padding-16 w3-dark-grey">C Projects</li>
+          <div class="w3-third w3-margin-bottom ">
+            <li class="w3-padding-16"><b>Psuedo Mail Server</b><br><br></li>
+            <li class="w3-padding-16"><b>Custom Memory Allocator</b><br><br></li>
+            <li class="w3-padding-16"><b>Matrix Inverse Finder</b></li>          
+          </div>
+          <div class="w3-twothird w3-margin-bottom ">
+            <li class="w3-padding-16">This is an application that connects multiple clients to a single server that stored mailboxes with messages 
+              that clients could read, write, and delete.</li>
+            <li class="w3-padding-16">This was an assignment done for my systems programming course. With a partner, I wrote a program that emulates the 
+              behavior of the Free() and Malloc() functions in C.</li>
+            <li class="w3-padding-16">Finds the inverse of a matrix inputted from a file using Gauss-Jordan techniques. Great for Linear Algebra Homeworks.</li>
+          </div>
+        </ul>
+      </div>
   </div>
 
   <div id="js" class="proj">
-    <div><br></div>
+      <div><br></div>
         <div>
           <div><br></div>
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Languadgfgdfgge</li>
-          <li class="w3-padding-16">Java</li>
-          <li class="w3-padding-16">Python</li>
-          <li class="w3-padding-16">C</li>
-          <li class="w3-padding-16">SQL</li>
-          <li class="w3-padding-16">Javascript</li>
-          <li class="w3-padding-16">HTML</li>
-        </ul>
-      </div>
-   
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-padding-16 w3-dark-grey">Javascript/HTML Projects</li>
+            <div class="w3-third w3-margin-bottom ">
+              <li class="w3-padding-16"><b>This Website!</b><br><br></li>
+              <li class="w3-padding-16"><b>Work with Vorsi.io</b></li>
+            </div>
+            <div class="w3-twothird w3-margin-bottom ">
+              <li class="w3-padding-16">Mostly using HTML with some Javascript I created this site, it's a simple and clean GUI that shows my experiences well.
+                This is the third version, each one better than the last.
+              </li>
+              <li class="w3-padding-16">While working under the lead programmer at Vorsi I used Javascript Vue to create different graphs that display user analytics from a database,
+                I used PDFMake to allow users to easily make PDF's for Opening Balance Statements and Invoices, And I fixed various bugs that made the site easier to use.
+              </li>
+            </div>
+          </ul>
+        </div>
   </div>
   
   </div>
@@ -510,23 +490,26 @@ body {font-size:16px;}
   <div class="w3-container" id="contact" style="margin-top:50px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid darkgray" class="w3-round">
-    <p><b></b>Feel free to contact me or check out my other profiles:</b></p>
-    <div class="w3-half">
+    <p><b>Feel free to contact me or check out my other profiles:</b></p>
+    <div class="w3-third">
+      <p align="right"><img src="images\mail.png"  style="height:50px;width:50px"></p>
+      <p align="right"><img src="images\github.svg"  style="height:48px;width:50px"></p>
+      
+      <p align="right"><img src="images\linkedin.png"  style="height:50px;width:50px"></p>
+    </div>
+    <div class="w3-third">
       <div class="w3-section">
-        <label>Email:</label>
         <div class="w3-container"></div>
         <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
           THanna96@Gmail.com
         </label>
       </div>
       <div class="w3-section">
-        <label>Github:</label>
         <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
           <a href="https://github.com/thanna96">github.com/thanna96</a>
         </label>
       </div>
       <div class="w3-section">
-        <label>LinkedIn:</label>
         <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
           <a href="https://www.linkedin.com/in/thomashanna96/">linkedin.com/in/thomashanna96</a>
         </label>
@@ -559,11 +542,12 @@ body {font-size:16px;}
 
 document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpen2").click();
+document.getElementById("defaultOpen3").click();
 // Script for likes buttons
 function showFunc(id) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent;
-  tabcontent = document.getElementsByClassName("w3-twothird");
+  tabcontent = document.getElementsByClassName("w3-twothird q");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
