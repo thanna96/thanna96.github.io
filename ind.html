@@ -23,8 +23,8 @@ body {font-size:16px;}
     <a href="images/resume.pdf" class="w3-bar-item w3-button w3-hover-white" download="ThomasHannaResume" target="_blank">Resume PDF</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
     <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
-    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
     <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Work Experience</a> 
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
@@ -41,269 +41,545 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="about">
+  <!-- About Me -->
+  <div class="w3-container" style="margin-top:30px" id="about">
     <h1 class="w3-xxxlarge w3-text-black"><b>About Me.</b></h1>
     <hr style="width:50px;border:5px solid darkgray" class="w3-round">
   </div>
   
-  <!-- Photo grid (modal) -->
+  <!-- About Me Accordian -->
   <div class="w3-row-padding">
-    
-      <p>
-        Growing up in a small rural town in New Jersey, I learned a lot about farming and taking care of animals. 
-        My parents and all three of my siblings have careers in law, however, I decided to pursue a different path. 
-        Due to my natural inclination toward mathematics and the like, I decided to study computer science and mathematics. 
-        Many of my skills are self-taught, however the professors and resources available to me at Rutgers University have 
-        been highly beneficial in my progression as a software developer. Every project assigned to me over these past four 
-        years has been challenging yet highly enjoyable, so I am sure I made the right choice in selecting my career. 
-      </p>
-    <p>
-        While I spend most of my time doing schoolwork and programming new projects, I also have other interests and hobbies I enjoy.
-        I love sports- whether I am watching or playing. I am in a fantasy football league with my friends from my hometown, 
-        and I also play basketball with them when I have time on weekends. I love to play video games, read, and bake, and I 
-        am a big film buff. Programming has brought me so many hours of frustration and so many hours of joy. There is no better 
-        feeling than completing a project that I spent days researching and programming for. I am looking forward to graduating 
-        from Rutgers in May 2020, and I am currently searching for a job in software development.
-        </p>
+    <div class="w3-card w3-round">
+      <div class="w3-dark-grey">
+        <button onclick="acccordianFunc('aboutMe')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i>Summary</button>
+        <div id="aboutMe" class="w3-white w3-hide w3-container">
+          <p>
+            Growing up in a small rural town in New Jersey, I learned a lot about farming and taking care of animals. 
+            My parents and all three of my siblings have careers in law, however, I decided to pursue a different path. 
+            Due to my natural inclination toward mathematics and the like, I decided to study computer science and mathematics. 
+            Many of my skills are self-taught, however the professors and resources available to me at Rutgers University have 
+            been highly beneficial in my progression as a software developer. Every project assigned to me over these past four 
+            years has been challenging yet highly enjoyable, so I am sure I made the right choice in selecting my career. 
+          </p>
+        <p>
+            While I spend most of my time doing schoolwork and programming new projects, I also have other interests and hobbies I enjoy.
+            I love sports- whether I am watching or playing. I am in a fantasy football league with my friends from my hometown, 
+            and I also play basketball with them when I have time on weekends. I love to play video games, read, and bake, and I 
+            am a big film buff. Programming has brought me so many hours of frustration and so many hours of joy. There is no better 
+            feeling than completing a project that I spent days researching and programming for. I am looking forward to graduating 
+            from Rutgers in May 2020, and I am currently searching for a job in software development.
+            </p>
+        </div>
+
+        <button onclick="acccordianFunc('edu')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Education</button>
+        <div id="edu" class="w3-white w3-hide w3-container">
+         
+        <div class="w3-half">
+        <ul class="w3-ul w3-left">
+          <li class="w3-padding-16"><b>Rutgers University</b>
+          <br><i>Bachelor of Science, Computer Science</i></li>
+          <li class="w3-padding-16"><b>Brookdale Community College</b>
+            <br><i>Associate of Science, Computer Science</i></li>
+          <li class="w3-padding-16"><b>Howell High School</b>
+            <br><i>High School Diploma</i></li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-left">
+          <li class="w3-padding-16"><b>New Brunswick, NJ</b>
+            <br><i>2020</i>
+          </li>
+          <li class="w3-padding-16"><b>Lincroft, NJ</b>
+            <br><i>2017</i>
+          </li>
+          <li class="w3-padding-16"><b>Howell, NJ</b>
+            <br><i>2014</i>
+          </li>
+        </ul>
+      </div>
+
+        </div>
+
+        <button onclick="acccordianFunc('likes')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Things I Like</button>
+        <div id="likes" class="w3-white w3-hide w3-container">
+          <div class="w3-third">
+            <table class="w3-table">
+              <tbody><tr>
+                <button onclick="showFunc('music')"  class="w3-button w3-block w3-padding-large w3-light-grey" id ="defaultOpen">Music</button>
+              </tr>
+              <tr>
+                <button onclick="showFunc('shows')" class="w3-button w3-block w3-padding-large w3-white">Shows</button>
+              </tr>
+              <tr>
+                <button onclick="showFunc('books')" class="w3-button w3-block w3-padding-large w3-light-grey">Books</button>
+              </tr>
+              <tr>
+                <button onclick="showFunc('movies')" class="w3-button w3-block w3-padding-large w3-white">Movies</button>
+              </tr>
+              <tr>
+                <button onclick="showFunc('hobbies')" class="w3-button w3-block w3-padding-large w3-light-grey">Hobbies</button>
+              </tr>
+            </tbody></table>
+          </div>
+
+          <div id="music" class="w3-twothird">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\pinkfloyd.jpg" alt="proj1" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Pink Floyd</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div >
+                <img src="images\frankocean.jpg" alt="proj2" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Frank Ocean</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\whitestripes.jpg" alt="proj3" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>White Stripes</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="shows" class="w3-twothird">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\community.jpg" alt="proj1" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Community</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div >
+                <img src="images\curb.jpg" alt="proj2" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Curb Your Enthusiasm</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\office.jpg" alt="proj3" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>The Office</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="books" class="w3-twothird">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\fish.jpg" alt="proj1" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Big Fish</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div >
+                <img src="images\steal.jpg" alt="proj2" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Steal This Book</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\suns.jpg" alt="proj3" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>A Thousand Splended Suns</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="movies" class="w3-twothird">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\basterds.jpg" alt="proj1" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Inglorious Basterds</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div >
+                <img src="images\suspects.jpg" alt="proj2" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>The Usual Suspects</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\war.jpeg" alt="proj3" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Avengers: Infinity War</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="hobbies" class="w3-twothird">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\python.png" alt="proj1" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Programming</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div >
+                <img src="images\ssb.jpg" alt="proj2" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Video Games</h4>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div>
+                <img src="images\ball.png" alt="proj3" style="width:100%">
+                <div class="w3-container w3-center">
+                  <h4>Basketball</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button onclick="acccordianFunc('adven')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Adventures</button>
+        <div id="adven" class="w3-white w3-hide w3-container">
+       <div class="w3-row-padding">
+       <br>
+         <div class="w3-third">
+           <img src="images\art1.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+         <div class="w3-third">
+           <img src="images\art2.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+         <div class="w3-third">
+           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+         <div class="w3-third">
+           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+         <div class="w3-third">
+           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+         <div class="w3-third">
+           <img src="images\me.jpg" style="width:100%" class="w3-margin-bottom">
+         </div>
+       </div>
+        </div>
+
+      </div>      
+    </div>
     
   </div>
 
-  <!-- Services -->
+  <!-- Projects -->
   <div class="w3-container" id="projects" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Projects.</b></h1>
     <hr style="width:50px;border:5px solid darkgray" class="w3-round">
-    <p>These are some of the projects I have worked on since 2017, some are school projects some are projects done in my free time.
-         Feel free to contact me if you have any question about my work.
+    <p><b>These are some of the projects I have worked on since 2017, some are school projects some are projects done in my free time.
+         Feel free to contact me if you have any question about my work.</b>
     </p>
-  </div>
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock.png" alt="proj1" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypto-Chat</h3>
-          <p class="w3-opacity">Android App Written in Java using Android Studio</p>
-          <p class="w3-opacity">https://github.com/thanna96/Crypto-Chat</p>
-          <p>CryptoChat is designed to be a discrete messaging service that uses asymmetric cryptography to securely 
-              send messages to your friends or business partners. Privacy on the internet is very important 
-              and CryptoChat is a great way to make sure your messages aren’t read by third parties.</p>
-        </div>
+
+    
+
+    <div class="w3-half w3-margin-bottom ">
+      <div class="w3-half w3-margin-bottom ">
+        <button onclick="showFunc2('python')" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-bottom" id = "defaultOpen2">Python</button>
+      </div>
+      <div class="w3-half w3-margin-bottom ">
+        <button onclick="showFunc2('java')" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-bottom">Java</button>
       </div>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock1.png" alt="proj2" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypotography Algorithms</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Cryptography-Algorithms</p>
-          <p>This project includes various small programs written in Python. These programs are designed 
-              to help decrypt or encrypt plaintext. Each program has its own specific use from encrypting/decrypting 
-              to finding primes or factoring integers.
-            </p>
-        </div>
+    <div class="w3-half w3-margin-bottom ">
+      <div class="w3-half w3-margin-bottom ">
+        <button onclick="showFunc2('c')" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-bottom">C</button>
       </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\graph.png" alt="proj3" style="width:100%">
-        <div class="w3-container">
-          <h3>Python Data Structures</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Python-Algorithm-Practice</p>
-          <p>This is a collection of LeetCode-esque problems with solutions written in Python using different data structures 
-              including: Arrays, Trees, Dictionaries, Graphs, Hash tables, Heaps, Linked lists, Queues, Stacks, and some other 
-              data structures I found useful.</p>
-        </div>
+      <div class="w3-half w3-margin-bottom ">
+        <button onclick="showFunc2('js')" class="w3-button w3-block w3-padding-large w3-dark-grey w3-margin-bottom">Javascript/HTML</button>
       </div>
+      <br>
     </div>
-  </div>
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock.png" alt="proj1" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypto-Chat</h3>
-          <p class="w3-opacity">Android App Written in Java using Android Studio</p>
-          <p class="w3-opacity">https://github.com/thanna96/Crypto-Chat</p>
-          <p>CryptoChat is designed to be a discrete messaging service that uses asymmetric cryptography to securely 
-              send messages to your friends or business partners. Privacy on the internet is very important 
-              and CryptoChat is a great way to make sure your messages aren’t read by third parties.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\lock1.png" alt="proj2" style="width:100%">
-        <div class="w3-container">
-          <h3>Crypotography Algorithms</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Cryptography-Algorithms</p>
-          <p>This project includes various small programs written in Python. These programs are designed 
-              to help decrypt or encrypt plaintext. Each program has its own specific use from encrypting/decrypting 
-              to finding primes or factoring integers.
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="images\graph.png" alt="proj3" style="width:100%">
-        <div class="w3-container">
-          <h3>Python Data Structures</h3>
-          <p class="w3-opacity">Python Applications</p>
-          <p class="w3-opacity">https://github.com/thanna96/Python-Algorithm-Practice</p>
-          <p>This is a collection of LeetCode-esque problems with solutions written in Python using different data structures 
-              including: Arrays, Trees, Dictionaries, Graphs, Hash tables, Heaps, Linked lists, Queues, Stacks, and some other 
-              data structures I found useful.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="skills" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-black"><b>Skills.</b></h1>
-    <hr style="width:50px;border:5px solid darkgray" class="w3-round">
-    <p><b>Computer Science Related Skills</b>:</p>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-half w3-margin-bottom">
+    <div><br></div>
+  <div id="python" class="proj">
+    <div><br></div>
+      <div>
+        <div><br></div>
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Languages</li>
+          <li class="w3-padding-16 w3-dark-grey">Proj1</li>
+          <li class="w3-padding-16">Jsssava</li>
+          <li class="w3-padding-16">Pytsshon</li>
+          <li class="w3-padding-16">Css</li>
+          <li class="w3-padding-16">SssQL</li>
+          <li class="w3-padding-16">Jssavascript</li>
+          <li class="w3-padding-16">HssTML</li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- Project Descriptions -->
+  <div id="java" class="proj">
+    <div  class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\lock.png" alt="proj1" style="width:100%">
+        <div class="w3-container">
+          <h3>Crypto-Chat</h3>
+          <p class="w3-opacity">Android App Written in Java using Android Studio</p>
+          <p class="w3-opacity">https://github.com/thanna96/Crypto-Chat</p>
+          <p>CryptoChat is designed to be a discrete messaging service that uses asymmetric cryptography to securely 
+              send messages to your friends or business partners. Privacy on the internet is very important 
+              and CryptoChat is a great way to make sure your messages aren’t read by third parties.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\lock1.png" alt="proj2" style="width:100%">
+        <div class="w3-container">
+          <h3>Crypotography Algorithms</h3>
+          <p class="w3-opacity">Python Applications</p>
+          <p class="w3-opacity">https://github.com/thanna96/Cryptography-Algorithms</p>
+          <p>This project includes various small programs written in Python. These programs are designed 
+              to help decrypt or encrypt plaintext. Each program has its own specific use from encrypting/decrypting 
+              to finding primes or factoring integers.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\graph.png" alt="proj3" style="width:100%">
+        <div class="w3-container">
+          <h3>Python Data Structures</h3>
+          <p class="w3-opacity">Python Applications</p>
+          <p class="w3-opacity">https://github.com/thanna96/Python-Algorithm-Practice</p>
+          <p>This is a collection of LeetCode-esque problems with solutions written in Python using different data structures 
+              including: Arrays, Trees, Dictionaries, Graphs, Hash tables, Heaps, Linked lists, Queues, Stacks, and some other 
+              data structures I found useful.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="c" class="proj">
+    <div><br></div>
+    <div>
+      <div><br></div>
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Largdgnguage</li>
+        <li class="w3-padding-16">Javfgdfa</li>
+        <li class="w3-padding-16">Pytgfgdhon</li>
+        <li class="w3-padding-16">fgC</li>
+        <li class="w3-padding-16">SgdfgQL</li>
+        <li class="w3-padding-16">Jafgdfvascript</li>
+        <li class="w3-padding-16">HTggdML</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="js" class="proj">
+    <div><br></div>
+        <div>
+          <div><br></div>
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Languadgfgdfgge</li>
           <li class="w3-padding-16">Java</li>
           <li class="w3-padding-16">Python</li>
           <li class="w3-padding-16">C</li>
           <li class="w3-padding-16">SQL</li>
-          <li class="w3-padding-16">javascript</li>
-          <li class="w3-padding-16">html</li>
+          <li class="w3-padding-16">Javascript</li>
+          <li class="w3-padding-16">HTML</li>
         </ul>
       </div>
-      <div class="w3-half">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Level of Experience</li>
-          <li class="w3-padding-16">4-Advanced</li>
-          <li class="w3-padding-16">4-Advanced</li>
-          <li class="w3-padding-16">4-Advanced</li>
-          <li class="w3-padding-16">4-Advanced</li>
-          <li class="w3-padding-16">2-Novice</li>
-          <li class="w3-padding-16">3-Intermediate</li>
-        </ul>
-      </div>
-    </div>
-        
-    <div class="w3-half">
-        <div class="w3-half">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Software</li>
-              <li class="w3-padding-16"></li>
-              <li class="w3-padding-16">50 hours support</li>
-              <li class="w3-padding-16">Photography</li>
-              <li class="w3-padding-16">50% furniture discount</li>
-              <li class="w3-padding-16">GREAT deals</li>
-              <li class="w3-padding-16">
-                <h2>$ 249</h2>
-                <span class="w3-opacity">per room</span>
-              </li>
-              <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-              </li>
-            </ul>
-          </div>
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Courses Taken</li>
-        <li class="w3-padding-16"></li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="work" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-black"><b>Work.</b></h1>
-    <hr style="width:50px;border:5px solid darkgrey" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
+   
   </div>
   
+  </div>
+
+  <!-- Work Experience -->
+  
+  <div class="w3-container" id="work" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Work.</b></h1>
+    <hr style="width:50px;border:5px solid darkgray" class="w3-round">
+    <p><b>Some of the jobs I've had over the past few years.</b></p>
+  
+      <div class="w3-card w3-round">
+        <div class="w3-dark-grey">
+          <label class=" w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i>Software Engineering Internship</label>
+          <div id="j1" class="w3-white w3-container">
+            <h4><b>>Vorsi Software</b></h4>
+            <p>Worked on a CRM software that was developed in JavaScript Vue and 
+                PHP using the Laravel framework. The CRM was used by a commodity distributer with over 800 clients. 
+                I Gained knowledge working with scalable and secure web applications. My main role was to add new features and fix bugs.</p>
+          </div>
+  
+          <label class="w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Computer Science Tutor</label>
+          <div id="j2" class="w3-white w3-container">
+            <h4><b>>Brookdale Community College</b></h4>
+            <p>Assisted students in acquiring better understanding of Java programming, data structures and SQL.
+                 Demonstrated ability to assist students in achieving higher grades on computer science related courses.</p>
+  
+          </div>
+  
+          <label class="w3-block w3-theme-l1 w3-left-align"><i class="w3-margin-right"></i> Server/Barback</label>
+          <div id="j3" class="w3-white w3-container">
+            <h4><b>>Huddy's Inn</b></h4>
+            <p>Waitor at a restaurant in Colts Neck, NJ for 4 years. I moved up from 
+                the dishwasher to a server and provided great customer service.</p>
+            </div>
+  
+        </div>      
+      </div>
+
+</div>
+
+<!-- Skills -->
+<div class="w3-container" id="skills" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-black"><b>Skills.</b></h1>
+  <hr style="width:50px;border:5px solid darkgray" class="w3-round">
+  <p><b>Computer Science Related Skills</b>:</p>
+</div>
+
+  <!-- Description -->
+<div class="w3-row-padding ">
+  <div class="w3-half w3-margin-bottom">
+    <div class="col-md-7 order-md-1">
+      <h3>Languages:</h3>
+      <p class="lead">Python, Java, C, JavaScript, HTML, SQL.</p>
+      <h3>Software:</h3>
+      <p class="lead">BASH, Eclipse, Visual Studio, Intellij, Android Studio, PHP Storm, MATLAB, Git, MySQL Workbench, SSH, GDB.</p>
+      <h3>Courses Taken:</h3>
+      <p class="lead">Data Structures, Cryptography, Computer Security, Database Design, Systems Programming, Algorithm Analysis, Software Methodology, Formal Languages & Automata.</p>
+      <h3>Other:</h3>
+      <p class="lead">Laravel, Vue, Node, PDFMake, D3, Electron.</p>
+  </div>
+  </div>
+      
+    <!-- Skills Table -->
+  <div class="w3-half">
+    <div class="w3-third"><br></div>
+    <div class="w3-half">
+      <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Language</li>
+        <li class="w3-padding-16">Java</li>
+        <li class="w3-padding-16">Python</li>
+        <li class="w3-padding-16">C</li>
+        <li class="w3-padding-16">SQL</li>
+        <li class="w3-padding-16">Javascript</li>
+        <li class="w3-padding-16">HTML</li>
+      </ul>
+    </div>
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Level</li>
+        <li class="w3-padding-16">4/5</li>
+        <li class="w3-padding-16">4/5</li>
+        <li class="w3-padding-16">4/5</li>
+        <li class="w3-padding-16">4/5</li>
+        <li class="w3-padding-16">2/5</li>
+        <li class="w3-padding-16">3/5</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+  
   <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
+  <div class="w3-container" id="contact" style="margin-top:50px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid darkgray" class="w3-round">
+    <p><b></b>Feel free to contact me or check out my other profiles:</b></p>
+    <div class="w3-half">
       <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+        <label>Email:</label>
+        <div class="w3-container"></div>
+        <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
+          THanna96@Gmail.com
+        </label>
       </div>
       <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <label>Github:</label>
+        <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
+          <a href="https://github.com/thanna96">github.com/thanna96</a>
+        </label>
       </div>
       <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <label>LinkedIn:</label>
+        <label class=" w3-block w3-padding-large w3-light-grey w3-margin-bottom">
+          <a href="https://www.linkedin.com/in/thomashanna96/">linkedin.com/in/thomashanna96</a>
+        </label>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
+    </div>
   </div>
 
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">
+  <a href="#">Back to top</a><br>
+  &copy; 2020 ThomasHanna, Inc.</p>
+</div>
 
 <script>
+
+// Script to open and close accordian
+  function acccordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen2").click();
+// Script for likes buttons
+function showFunc(id) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("w3-twothird");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(id).style.display = "block";
+}
+
+function showFunc2(id) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("proj");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(id).style.display = "block";
+}
+
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -315,13 +591,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 </script>
 
 </body>
